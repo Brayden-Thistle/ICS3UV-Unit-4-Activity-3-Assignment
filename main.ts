@@ -25,9 +25,9 @@ for (let currentnumber1 = 0; currentnumber1 < amount; currentnumber1++) {
   subtotal += cost[currentnumber1];
 }
 
-const discount = (subtotal * 0.10) - subtotal
+const discount = (subtotal * 0.10)
 const HST = subtotal * 0.13
-const total = (subtotal + discount) + HST
+const total = (subtotal - discount) + HST
 
 
 //displaying the items, subtotal, discount, HST and the overall total.
